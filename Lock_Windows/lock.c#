@@ -1,0 +1,19 @@
+using System;
+using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.Text;
+using System.Diagnostics;
+
+
+namespace tebbeam.Lock
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {  
+            Process.Start(@"C:\WINDOWS\system32\rundll32.exe", "user32.dll,LockWorkStation") ;
+			
+        }
+
+}
+}
