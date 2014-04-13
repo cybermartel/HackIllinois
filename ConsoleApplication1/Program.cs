@@ -18,17 +18,15 @@ namespace ConsoleApplication1
 {
     class Program
     {
-        public static void Main()
-        {
-            int sleep = 0;
-           int left = 0;
-           int right = 0 ;
-            int down = 1 ;
-            int up = 0;
-            int a = 3;
-            while(a>0)
-            {
-            if(left==1)
+        public int UNLOCK;
+        public  int LOCK;
+        public int LEFT = 0;
+        public int RIGHT = 0 ;
+        public int DOWN = 0 ;
+        public int UP = 0;
+        public void run()
+        {        
+            if(LEFT==1)
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -36,7 +34,7 @@ namespace ConsoleApplication1
                 }
             }
 
-            if(right==1)
+            if(RIGHT==1)
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -44,7 +42,7 @@ namespace ConsoleApplication1
                 }
             }
 
-            if(down==1)
+            if(DOWN==1)
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -52,7 +50,7 @@ namespace ConsoleApplication1
                 }
             }
 
-            if(up==1)
+            if(UP==1)
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -60,13 +58,11 @@ namespace ConsoleApplication1
                 }
             }
 
-            if(sleep==1)
+            if(LOCK==1)
             {
                 Process.Start(@"C:\WINDOWS\system32\rundll32.exe", "user32.dll,LockWorkStation");
             }
-            a--;
             }
         }
 
     }
-}
